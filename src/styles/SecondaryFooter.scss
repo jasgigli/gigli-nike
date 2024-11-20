@@ -1,0 +1,32 @@
+.secondary-footer {
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(46, 43, 43);
+  color: white;
+  &__leftside {
+    &__logo {
+      height: 3rem;
+      border-radius: 100%;
+    }
+  }
+  &__rightside__links > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1rem;
+    & > li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+.secondary-footer-bottom {
+  padding: 2rem 5rem;
+  text-align: center;
+  background-color: rgb(46, 43, 43);
+  color: white;
+  margin: 2rem 0;
+}

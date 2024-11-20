@@ -1,0 +1,51 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 5rem;
+  gap: 2rem;
+  padding: 2rem;
+  //   flex-wrap: wrap;
+  text-align: center;
+
+  &__image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1); // Zoom-in effect
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover:before {
+      opacity: 1; // Slight overlay on hover
+    }
+  }
+
+  &__image {
+    height: 100%;
+    width: auto;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+    max-height: 450px;
+
+    &:hover {
+      transform: rotate(2deg); // Subtle rotation effect
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.primary-footer {
+  margin: 5rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      h2 {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #555;
+      }
+    }
+  }
+
+  &__icon {
+    font-size: 5rem;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+}

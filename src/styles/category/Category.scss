@@ -1,0 +1,45 @@
+.category-wrapper {
+  text-align: center;
+  padding: 2rem;
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    &--new-arrivals {
+      background-color: rgb(163, 79, 163);
+      border: 0.3rem solid rgb(214, 81, 231);
+      &:hover {
+        background-color: purple;
+      }
+    }
+    &--trending {
+      border: 0.3rem solid rgb(241, 175, 87);
+      background-color: rgb(209, 127, 72);
+      &:hover {
+        background-color: rgb(255, 115, 0);
+      }
+    }
+
+    button {
+      outline: none;
+      padding: 1rem 2.5rem;
+      color: #fff;
+      border-radius: 2rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5rem 0;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,43 @@
+// Variables
+$flex-center: flex;
+$gap-size: 1rem;
+
+// Mixins
+@mixin flex-center {
+  display: $flex-center;
+  align-items: center;
+}
+
+// Main Styles
+.secondary-header {
+  @include flex-center;
+  justify-content: space-between;
+  margin: 1rem 5rem;
+  font-weight: bold;
+
+  &__leftside {
+    @include flex-center;
+
+    &__logo {
+      height: 3rem;
+      border-radius: 100px;
+    }
+
+    &__menu {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 1rem;
+    }
+  }
+
+  &__rightside {
+    display: $flex-center;
+    justify-content: space-between;
+    gap: $gap-size;
+    &__icons {
+      font-size: 1.5rem;
+    }
+  }
+}
